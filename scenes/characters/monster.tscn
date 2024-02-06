@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce01st5bkhsmb"]
+
+[ext_resource type="Texture2D" uid="uid://cole8htxp3p8g" path="res://assets/sprites/Skeleton Walk.png" id="1_rsj2b"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eyh3l"]
+radius = 8.0
+
+[node name="Monster" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rsj2b")
+hframes = 13
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 2)
+shape = SubResource("CapsuleShape2D_eyh3l")
