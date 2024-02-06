@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cti4tbpdpju84"]
+
+[ext_resource type="Texture2D" uid="uid://bl7tk0o0vy3d0" path="res://assets/sprites/adventurer-idle-00.png" id="1_qo23c"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nsohm"]
+radius = 12.0
+height = 46.0
+
+[node name="Main" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_qo23c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("CapsuleShape2D_nsohm")
